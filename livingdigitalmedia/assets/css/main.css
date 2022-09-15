@@ -23,14 +23,15 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 body {
-	line-height: 1;
+	line-height: 2;
 }
 
 ol, ul {
@@ -133,7 +134,7 @@ input, select, textarea {
 /* Type */
 
 	html {
-		font-size: 16pt;
+		font-size: 12pt;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -147,7 +148,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			html {
-				font-size: 11pt;
+				font-size: 12pt;
 			}
 
 		}
@@ -155,20 +156,21 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			html {
-				font-size: 10pt;
+				font-size: 12pt;
 			}
 
 		}
 
 	body {
 		color: #212931;
+        
 	}
 
 	body, input, select, textarea {
-		font-family: "Garamond", Georgia, serif;
+		font-family: "Merriweather", Georgia, serif;
 		font-weight: 275;
-		font-size: 1.2rem;
-		line-height: 2.375;
+		font-size: .90rem;
+		line-height: 2.0;
 	}
 
 	a {
@@ -195,6 +197,9 @@ input, select, textarea {
 	p {
 		text-align: justify;
 		margin: 0 0 1.5rem 0;
+        max-width: 40em;
+        
+        
 	}
 /* The above is for spacing graphs! */
 
@@ -205,6 +210,7 @@ input, select, textarea {
 		letter-spacing: 0.075em;
 		text-transform: capitalize;
 		margin: 0 0 1rem 0;
+        
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -4190,6 +4196,7 @@ background-color: #fff;
 
 			}
 
+
 		#main > .posts {
 			display: -moz-flex;
 			display: -webkit-flex;
@@ -4311,6 +4318,7 @@ background-color: #fff;
 			}
 
 		}
+
 
 /* Footer */
 
@@ -5066,7 +5074,62 @@ background-color: #fff;
 			box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
 			visibility: visible;
 		}
+      
         
         
+        .scroll-container {
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 60px;
+    color: #333333;
+    background: #ffffff;
+    overflow: hidden;
+    z-index: 1000;
+    -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .1);
+}
+
+.navbar-brand a {
+    text-decoration: none;
+    color: #0097e6;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.menu-item {
+    display: inline-block;
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: 1rem;
+    color: inherit;
+}
+
+.menu-item:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.menu-item.active {
+    background: #00a8ff;
+    color: #ffffff;
+}
+ 
 
 	}

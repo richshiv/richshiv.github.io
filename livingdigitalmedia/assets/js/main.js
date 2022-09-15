@@ -255,7 +255,8 @@ for (i = 0; i < coll.length; i++) {
 
 				});
             
-            
+ 
+        
 
 			// Hide intro on scroll (<= small).
 				breakpoints.on('<=small', function() {

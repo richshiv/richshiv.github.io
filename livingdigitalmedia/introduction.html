@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        
 	</head>
 	<body class="is-preload">
 
@@ -101,16 +102,16 @@
 
 				<!-- Main -->
 					<div id="main">
+                        
 
 						<!-- Post -->
 							<section class="post">
+                                                                     
 								<header class="major">
 									<span class="date">Introduction</span>
 									<h2>Rhetorical-Affective Practices in the Now
 									</h2>
 								</header>
-
-
                                 <video width="100%" height="auto" poster="media/fdm_staticcode.png" controls>
   <source src="media/book_intro_mixdown_1.mp4" type="video/mp4">
 Your browser does not support the video tag.
@@ -119,6 +120,7 @@ Your browser does not support the video tag.
 
 <!--This book trailer was designed to set the affective tone for the book. For audio and video elements in this book, I have enjoyed coding the transcript as an HTML table that divides the video and audio. Transcripts are often linked as PDFs, a fine option that ensures accessibility for readers. However, my view is that coded transcripts make them feel like a part, rather than seperate entity, of the page. A coded transcript also feels more interactive for users. That said, I simply added an expansion button at the top of each transcript so that it can be read with ease.--> 
                                  <button type="button" class="collapsible">Video Transcript</button>
+                                
 <div class="box">
            
     <table style="width:100%">
@@ -189,7 +191,8 @@ exchanging ideas and sharing." </td>
 </table>
 
                                 </div>                                
-                       
+                              
+                                
 <p><br>
     <cite>Living Digital Media</cite> is a work of research-driven storytelling and theory building. For years now, I’ve been interested in how creators describe digital media productions. When creators compose with digital media, they’re sinking many hours of practice into a production. They’re living it. It’s a part of them. They love it. Hate it. Delete it. Undo it. And they’re not alone. In addition to making use of myriad digital tools, they are collaborating with peers and teams; revising arguments in response to reviewer feedback, and sharing final publications and reflections with larger public audiences. They are living digital media.</p>
                                 
@@ -329,7 +332,8 @@ exchanging ideas and sharing." </td>
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/simple-scrollspy.min.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
@@ -337,6 +341,23 @@ exchanging ideas and sharing." </td>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        	<!-- Script for page nav -->
+        <script>
+    window.onload = function () {
+      scrollSpy('#main-menu', {
+        sectionClass: '.scrollspy',
+        menuActiveTarget: '.menu-item',
+        offset: 100,
+        scrollContainer: '.scroll-container',
+        // smooth scroll
+        smoothScroll: true,
+        smoothScrollBehavior: function(element) {
+          console.log('run "smoothScrollBehavior"...', element)
+          element.scrollIntoView({ behavior: 'smooth' })
+        }
+      })
+    }
+  </script>
 
 	</body>
 </html>
