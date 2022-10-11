@@ -368,7 +368,6 @@ input, select, textarea {
 		display: flex;
 		flex-wrap: wrap;
 		box-sizing: border-box;
-		align-items: stretch;
 	}
 
 		.row > * {
@@ -3538,7 +3537,7 @@ input, select, textarea {
 		transition: opacity 0.5s ease;
 		position: relative;
 		z-index: 1;
-		overflow: hidden;
+		overflow: ;
 	}
 
 		#wrapper > .bg {
@@ -5076,12 +5075,18 @@ background-color: #fff;
 		}
        
 div.sticky {
+    position: -webkit-sticky;
   position: sticky;
   top: 0;
-background-color: gray;
-  padding: 50px;
+background-color: whitesmoke;
+  padding: 30px;
   font-size: 14px;
 }
+   /* Big thanks to Tim Lockridge for helping me with Scrollspy and stylizing the page navigation. This page nav is attributed to his help based on this developer's code: https://github.com/kimyvgy/simple-scrollspy/releases/tag/v2.3.2 */     
+        .menu-item.active {
+			background: #00a8ff;
+			color: #ffffff;
+		}
  
 
 	}
