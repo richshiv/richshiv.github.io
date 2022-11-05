@@ -33,8 +33,8 @@ Credits:
         
         
         
-                                      <!--  <video width="100%" height="auto" poster="media/fdm_staticcode.png" controls>
-  <source src="media/book_intro_mixdown_1.mp4" type="video/mp4">
+                                      <!--  <video width="100%" height="auto" poster="media/fdm-staticcode.png" controls>
+  <source src="media/book-intro-mixdown-1.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>   --> 
                                 
